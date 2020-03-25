@@ -43,9 +43,10 @@ Command-5:
 Search for a file:
 
 Syntax: dir File_name /s /p
-Explanation: This command finds for the file and returns. Here s => Start search opration, 
+Explanation: This command finds for the file and returns. Here
+	     s => Start search opration, 
 	     p => Pause search operation
-Example:
+Example: dir user.txt /s /p
 
 Command-6:
 
