@@ -1,0 +1,87 @@
+what is Git?
+Git is a version control system for tracking 
+changes in computer files and coordinating work on those 
+files among multiple people. 
+
+what is version control?
+Version control is important for documents that undergo a 
+lot of revision and redrafting and is particularly important 
+for electronic documents because they can easily be changed by 
+a number of different users. 
+
+Fork a project from the website then open git bash
+
+CLONING A PROJECT:
+git clone https://github.com/vishnukalyan/portfolio-1.git
+
+To see the existing branches:
+git branch
+>* master
+* indicates the current working branch
+
+CREATING A NEW BRANCH:
+git branch branch_name
+EX: git branch vishnu
+
+After the branch is created it will be shown when we use git branch
+
+git branch
+>* master
+>vishnu
+
+SWICHING TO ANOTHER BRANCH:
+EX: git checkout vishnu
+>switched to branch 'vishnu'
+
+CHECKING THE WORKING BRANCH:
+git branch
+>master
+>* vishnu
+
+Now we can see the * symbol is shifted to new branch
+so we are working withe the new branch
+
+Next we will make some changes in the code(README file is updated) then
+
+git status
+>On branch vishnu
+>Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+		modified:   README.md
+
+The changes made are shown in red colour
+
+ADDING THE MODIFIED FILES:
+git add . => adds all files
+git add file_name =>add the particular file
+EX: git add README.md
+
+COMMITING THE CHANGES:
+git commit -m "Msg Here"
+EX: git commit -m "initial commit"
+  > 1 file changed, 1 insertion(+)
+
+m stands for message and commiting with the correct message is always helpfull
+
+CONFIG:
+git config --global user.name vishnukalyan
+git config --global user.email vishnukalyan77@gmail.com
+
+PUSHING:
+git push origin branch_name
+EX: git push vishnu
+>Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 356 bytes | 44.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'vishnu' on GitHub by visiting:
+remote:      https://github.com/vishnukalyan/portfolio-1/pull/new/vishnu
+remote:
+To https://github.com/vishnukalyan/portfolio-1.git
+ * [new branch]      vishnu -> vishnu
+
+Next we should go into the link and create a pull request with the message
