@@ -1,0 +1,49 @@
+Day-3 NOTES
+
+git branch -b branch_name => creates and switches to the newly created branch
+
+git branch -d branch_name => Mentioned branch will be deleted and
+			     current branch cannot be deleted
+
+git remote add origin <url> => url of repo link 
+			       adds the local folder to github
+
+git remote -v => verify the remote url
+
+git remote add upstream <url> => Considers the url as the upstream 
+
+git log => listout all the commits with details like author and date
+
+touch testfile.c => Creates a file named testfile.c
+
+git add testfile.c => Adding the test file
+
+git rm testfile.c => Removal cannot be done if comitted
+
+git rm -f testfile.c => Force removal
+
+git diff => shows difference between the master code and current branch code
+	    like  insertions and deletions
+
+git commit --amend => commit changes to same PR
+
+git fetch origin master => just copies but not merges
+
+git pull => override the changes (merges) (fetches and merges)
+
+git rebase origin/master => it will rebase the commited changes (update)
+
+git stash => saves changes in local directory and removes from commiting stage
+
+git stash apply => applies changes to repo
+
+git branch -set--upstream-to=origin/master branch_name =>
+
+git pull =>merges remote to master
+
+git reset --hard HEAD^ => reset the latest commit and points head to previous commit (doesn't save changes)
+
+git reset --soft HEAD^ => reset the latest commit and saves the code changes
+
+git init => converts ordinary folder to git repo so that all git commands can be used on it
+
