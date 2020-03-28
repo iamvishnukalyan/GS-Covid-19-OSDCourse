@@ -1,0 +1,25 @@
+
+git squash => merges multiple coommits into one
+
+git rebase -i HEAD~3 => i is interactive, HEAD is pointer points to latest commit
+
+git checkout -b branchname =>   Combines the two git statements i.e., creating branch(git branch branch_name)
+	 and checkout to that branch(git checkout branch_name)
+
+git merge branch_name => merges the current branch with master branch
+
+git branch -d branch_name => deletes branch because already merged with master
+
+git branch -D branch_name => deletes the branch forcefully and moves to master
+
+git rebase --abort => aborts rebase
+
+MERGE CONFLICTS
+If many people are trying to make changes to the same file then merge conflicts occur
+
+HANDLING MERGE CONFLICTS
+(https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line)
+
+git clean -f => cleans untracked files, f is forced 
+
+Task 1: Merge two branches and it shoudnt be master
